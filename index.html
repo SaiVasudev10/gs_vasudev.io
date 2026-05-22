@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Vasudev Gandam | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0A1F44, #121f3d);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+.hero img {
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0,200,255,0.5);
+}
+
+.hero-text h1 {
+    font-size: 42px;
+}
+
+.hero-text span {
+    color: #00d4ff;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    max-width: 500px;
+}
+
+.buttons a {
+    background: #00d4ff;
+    padding: 12px 18px;
+    margin-right: 10px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    margin-bottom: 30px;
+    border-left: 5px solid #00d4ff;
+    padding-left: 10px;
+}
+
+/* CARDS */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #00d4ff;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #00d4ff;
+    color: black;
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #081832;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-bottom: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h3>Sai</h3>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Sai Vasudev</span></h1>
+        <p>Business Analyst & Aspiring Product Manager transforming data into impactful products across Insurance, E-Commerce, and Technology domains.</p>
+        
+        <div class="buttons">
+            <a href="#projects">View Projects</a>
+            <a href="https://www.linkedin.com/in/sai-vasudev-gandam-b6238015b/">LinkedIn</a>
+        </div>
+    </div>
+
+    <img src="My Profile.jpg" alt="Profile Image">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+Results-oriented Business Analyst with 5+ years experience in Agile delivery, requirement gathering, and data analytics. Skilled in SQL, Power BI, and stakeholder management, delivering scalable business solutions with measurable outcomes.
+</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<h2>Experience</h2>
+<div class="card-container">
+
+<div class="card">
+<h3>Cognizant – Technology Analyst</h3>
+<p>2025 - Present</p>
+<p>Driving cloud transformation & API modernization</p>
+</div>
+
+<div class="card">
+<h3>Annalect – Business Analyst</h3>
+<p>2022 - 2025</p>
+<p>Improved reporting efficiency by 30% using Power BI dashboards</p>
+</div>
+
+<div class="card">
+<h3>Nendrasys – Jr. Business Analyst</h3>
+<p>2019 - 2020</p>
+<p>Delivered projects with 15% efficiency improvement</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>The Body Shop</h3>
+<p><b>Domain:</b> E-Commerce</p>
+<p>Boosted conversion rate by 30% through UI/UX optimization and improved checkout experience.</p>
+</div>
+
+<div class="card">
+<h3>Omni Assist</h3>
+<p><b>Domain:</b> AI / Technology</p>
+<p>Built an internal chatbot to assist developers in coding, improving productivity by 30%.</p>
+</div>
+
+<div class="card">
+<h3>Commercial Credit</h3>
+<p><b>Domain:</b> Insurance</p>
+<p>Modernized underwriting system into cloud-based API architecture improving scalability and credit decisioning.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>SQL</span>
+<span>Power BI</span>
+<span>Agile</span>
+<span>Jira</span>
+<span>Figma</span>
+<span>Data Analysis</span>
+<span>Stakeholder Management</span>
+<span>API Understanding</span>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+<h2>Education</h2>
+<p>MSc Information Technology – JNTUK (2019)</p>
+<p>Bachelor of Engineering (2016)</p>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+<h2>Certifications</h2>
+<ul>
+<li>Certified Scrum Product Owner (CSPO)</li>
+<li>Microsoft Power BI Data Analyst</li>
+<li>Business Analysis Foundation</li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: sai.gadam94@gmail.com</p>
+<p>Phone: +91-8332067535</p>
+<p>Location: Hyderabad</p>
+</section>
+
+<footer>
+<p>© 2026 Sai Vasudev Gandam</p>
+</footer>
+
+</body>
+</html>
