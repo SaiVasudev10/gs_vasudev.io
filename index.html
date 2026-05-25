@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Vasudev Gandam | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0A1F44, #121f3d);
+    color:white;
+}
+
+/* NAVBAR */
+nav {
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+    background: rgba(0,0,0,0.4);
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+}
+
+nav a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+}
+
+.hero img {
+    width:200px;
+    border-radius:50%;
+    box-shadow:0 0 25px #00d4ff;
+}
+
+.hero h1 {
+    font-size:42px;
+}
+
+.hero span {
+    color:#00d4ff;
+}
+
+.hero p {
+    margin:20px 0;
+    max-width:500px;
+}
+
+.btn {
+    background:#00d4ff;
+    padding:12px 18px;
+    border-radius:25px;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section {
+    padding:60px 10%;
+}
+
+h2 {
+    margin-bottom:30px;
+    border-left:5px solid #00d4ff;
+    padding-left:10px;
+}
+
+/* CARDS */
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:25px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter:blur(12px);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-8px);
+}
+
+.card h3 {
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.card ul {
+    margin:10px 0 10px 20px;
+}
+
+.skills span {
+    display:inline-block;
+    background:#00d4ff;
+    color:black;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:20px;
+}
+
+/* FOOTER */
+footer {
+    text-align:center;
+    padding:20px;
+    background:#081832;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+    .hero {
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h3>Sai</h3>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Hi, I'm <span>Sai Vasudev</span></h1>
+        <p>Business Analyst & aspiring Product Manager transforming business needs into scalable digital solutions across Insurance, E-Commerce, and Technology.</p>
+        <a class="btn" href="#projects">View Projects</a>
+    </div>
+
+    <img src="profile.jpg" alt="Profile Photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+Results-oriented Business Analyst with 5+ years of experience in Agile delivery, requirement gathering, and data analytics. Skilled in SQL, Power BI, and stakeholder management, with a proven ability to convert complex business challenges into scalable product solutions.
+</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<h2>Experience</h2>
+<div class="container">
+
+<div class="card">
+<h3>Cognizant – Technology Analyst</h3>
+<p>May 2025 – Present</p>
+<p>Driving cloud transformation initiatives and aligning business needs with scalable technical solutions.</p>
+</div>
+
+<div class="card">
+<h3>Annalect – Business Analyst</h3>
+<p>Mar 2022 – May 2025</p>
+<p>Improved reporting efficiency by 30% through Power BI dashboards and led Agile product delivery.</p>
+</div>
+
+<div class="card">
+<h3>Nendrasys – Jr Business Analyst</h3>
+<p>Feb 2019 – Mar 2020</p>
+<p>Delivered projects with 15% improved efficiency and led stakeholder workshops & UAT sessions.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="container">
+
+<!-- PROJECT 1 -->
+<div class="card">
+<h3>The Body Shop</h3>
+<p><b>Domain:</b> E-Commerce</p>
+
+<p>
+Enhanced The Body Shop’s online storefront by improving user interface design and optimizing checkout experiences, particularly on mobile devices, to reduce drop-offs and improve customer engagement.
+</p>
+
+<ul>
+<li>Collaborated with cross-functional teams to improve UI/UX</li>
+<li>Conducted stakeholder workshops and gathered requirements</li>
+<li>Designed wireframes and validated via UAT</li>
+<li>Optimized mobile checkout flow</li>
+</ul>
+
+<p><b>Tools:</b> SQL, Splunk, Postman, SAP Hybris</p>
+<p><b>Impact:</b> Increased conversion rate by 30%</p>
+</div>
+
+<!-- PROJECT 2 -->
+<div class="card">
+<h3>Omni Assist</h3>
+<p><b>Domain:</b> AI / Technology</p>
+
+<p>
+Developed an internal AI-powered chatbot designed to assist developers in coding, testing, and deployment, improving productivity and reducing manual effort through intelligent automation.
+</p>
+
+<ul>
+<li>Led Agile Scrum execution and backlog management</li>
+<li>Defined user stories and product features</li>
+<li>Built Power BI dashboards for usage tracking</li>
+<li>Optimized AI prompts for performance</li>
+</ul>
+
+<p><b>Tools:</b> Power BI, SQL, Python, MongoDB</p>
+<p><b>Impact:</b> Improved operational efficiency by 30%</p>
+</div>
+
+<!-- PROJECT 3 -->
+<div class="card">
+<h3>Commercial Credit</h3>
+<p><b>Domain:</b> Insurance</p>
+
+<p>
+Modernized a legacy Insurance Underwriting Rules System by migrating it to a cloud-native architecture with API-driven integrations, improving scalability, performance, and real-time credit decision-making processes.
+</p>
+
+<ul>
+<li>Gathered requirements for underwriting system transformation</li>
+<li>Designed API integration strategies for credit services</li>
+<li>Converted workflows into Agile user stories</li>
+<li>Facilitated stakeholder collaboration and Agile delivery</li>
+<li>Defined routing and caching strategies</li>
+</ul>
+
+<p><b>Tools:</b> SQL, Splunk, Postman, Jira, Excel, Spring Boot</p>
+<p><b>Impact:</b> Improved system scalability and credit decision efficiency</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>SQL</span>
+<span>Power BI</span>
+<span>Agile</span>
+<span>Jira</span>
+<span>Figma</span>
+<span>Stakeholder Management</span>
+<span>Data Analysis</span>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+<h2>Education</h2>
+<p>MSc Information Technology – JNTUK (2019)</p>
+<p>Bachelor of Engineering (2016)</p>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+<h2>Certifications</h2>
+<ul>
+<li>Certified Scrum Product Owner (CSPO)</li>
+<li>Microsoft Power BI Data Analyst</li>
+<li>Business Analysis Foundation</li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: sai.gadam94@gmail.com</p>
+<p>Phone: +91-8332067535</p>
+<p>Location: Hyderabad, India</p>
+<p><a href="https://www.linkedin.com/in/sai-vasudev-gandam-b6238015b/" target="_blank">LinkedIn Profile</a></p>
+</section>
+
+<footer>
+<p>© 2026 Sai Vasudev Gandam | Portfolio</p>
+</footer>
+
+</body>
+</html>
